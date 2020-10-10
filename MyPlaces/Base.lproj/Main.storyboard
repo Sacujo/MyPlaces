@@ -270,11 +270,14 @@
                                 </connections>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vR8-fp-DZt">
-                                <rect key="frame" x="0.0" y="88" width="414" height="32"/>
+                                <rect key="frame" x="0.0" y="87" width="414" height="32"/>
                                 <segments>
                                     <segment title="Date"/>
                                     <segment title="Name"/>
                                 </segments>
+                                <connections>
+                                    <action selector="sortSelection:" destination="oZf-gL-MeJ" eventType="valueChanged" id="Xnk-om-V2Q"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -290,7 +293,11 @@
                         <viewLayoutGuide key="safeArea" id="GVl-Q6-9mC"/>
                     </view>
                     <navigationItem key="navigationItem" title="My Places" largeTitleDisplayMode="never" id="Ixr-OQ-dVf">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="AZ" id="Fre-Up-gfh"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="AZ" id="Fre-Up-gfh">
+                            <connections>
+                                <action selector="reverseSorting:" destination="oZf-gL-MeJ" id="XPn-jT-dJD"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="hDh-ry-kIn">
                             <connections>
                                 <segue destination="8dN-DR-e9A" kind="presentation" modalPresentationStyle="fullScreen" id="4T8-dF-rAi"/>
@@ -298,6 +305,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="reversedSortingButton" destination="Fre-Up-gfh" id="PPH-iC-zDQ"/>
+                        <outlet property="segmentedControl" destination="vR8-fp-DZt" id="c9m-OP-SQH"/>
                         <outlet property="tableView" destination="MX4-HS-fNh" id="pNy-e5-vr5"/>
                     </connections>
                 </viewController>
