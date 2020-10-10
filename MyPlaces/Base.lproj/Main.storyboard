@@ -205,7 +205,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MX4-HS-fNh">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="120" width="414" height="776"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="K8F-02-A38" customClass="CustomTableViewCell" customModule="MyPlaces" customModuleProvider="target">
@@ -269,8 +269,8 @@
                                     <outlet property="delegate" destination="oZf-gL-MeJ" id="PYm-pe-Mvr"/>
                                 </connections>
                             </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vR8-fp-DZt">
-                                <rect key="frame" x="0.0" y="87" width="414" height="32"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vR8-fp-DZt">
+                                <rect key="frame" x="0.0" y="88" width="414" height="32"/>
                                 <segments>
                                     <segment title="Date"/>
                                     <segment title="Name"/>
@@ -282,13 +282,13 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="MX4-HS-fNh" secondAttribute="bottom" id="6oQ-b8-qwn"/>
-                            <constraint firstItem="vR8-fp-DZt" firstAttribute="top" secondItem="GVl-Q6-9mC" secondAttribute="top" id="Eaf-SC-ygV"/>
-                            <constraint firstItem="MX4-HS-fNh" firstAttribute="leading" secondItem="GVl-Q6-9mC" secondAttribute="leading" id="IrY-Iy-nJr"/>
-                            <constraint firstItem="vR8-fp-DZt" firstAttribute="trailing" secondItem="GVl-Q6-9mC" secondAttribute="trailing" id="RGJ-Lm-rTu"/>
-                            <constraint firstItem="vR8-fp-DZt" firstAttribute="leading" secondItem="GVl-Q6-9mC" secondAttribute="leading" id="X7D-Cy-j4b"/>
-                            <constraint firstItem="MX4-HS-fNh" firstAttribute="top" secondItem="v5l-Qe-RbL" secondAttribute="top" id="bMl-Te-CSd"/>
-                            <constraint firstItem="MX4-HS-fNh" firstAttribute="trailing" secondItem="GVl-Q6-9mC" secondAttribute="trailing" id="pho-W0-jw9"/>
+                            <constraint firstItem="MX4-HS-fNh" firstAttribute="trailing" secondItem="GVl-Q6-9mC" secondAttribute="trailing" id="76Q-vc-NVg"/>
+                            <constraint firstItem="MX4-HS-fNh" firstAttribute="top" secondItem="vR8-fp-DZt" secondAttribute="bottom" constant="1" id="DxF-O7-Fue"/>
+                            <constraint firstItem="MX4-HS-fNh" firstAttribute="leading" secondItem="GVl-Q6-9mC" secondAttribute="leading" id="SvP-6d-RwV"/>
+                            <constraint firstAttribute="bottom" secondItem="MX4-HS-fNh" secondAttribute="bottom" id="Ub8-AS-DNp"/>
+                            <constraint firstItem="vR8-fp-DZt" firstAttribute="leading" secondItem="GVl-Q6-9mC" secondAttribute="leading" id="YE0-5n-gqt"/>
+                            <constraint firstItem="vR8-fp-DZt" firstAttribute="top" secondItem="GVl-Q6-9mC" secondAttribute="top" id="kyx-zo-aqp"/>
+                            <constraint firstItem="vR8-fp-DZt" firstAttribute="trailing" secondItem="GVl-Q6-9mC" secondAttribute="trailing" id="m8f-PV-YO5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GVl-Q6-9mC"/>
                     </view>
@@ -312,7 +312,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Osy-bz-AzH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="636" y="167"/>
+            <point key="canvasLocation" x="634.78260869565224" y="166.74107142857142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Gp4-wT-ayf">
